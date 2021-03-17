@@ -1,0 +1,77 @@
+.smiley {
+    width:70%;
+    max-width:250px;
+    height:auto;
+    transform:rotateZ(0deg);
+    animation: rotate 5s linear infinite;
+  }
+  .smile, .eyes {
+    stroke:rgba(63, 109,71,255);
+    stroke-width:1.3;
+    stroke-linecap:round;
+    fill:transparent;
+  }
+   .lists li a{
+  color:#13524a !important;
+}
+  .lists li:hover ,.lists li a:hover{
+   background:black;
+   color:white !important;
+   transition:1.5s;
+  }
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+ .bi{
+   color:black;
+ }
+  .bi:hover, .bi:active { 
+    color:#13524a;
+     -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3); 
+  }
+   
+  .header-button{
+    color:#13524a;
+    background:white;
+    border:2px solid white;
+    border-radius:20px;
+    font-weight:bolder;
+    width:auto !important;
+  }
+  .com-icon{
+    display:none;
+  }
+
+  .header-button:hover{
+    background:black;
+    color:#ffffff;
+  }
+  @media only screen and (max-width: 576px){
+    .abhi{
+      flex-direction:column-reverse;
+    }
+  
+  }
+  @media only screen and (max-width: 991.5px){
+    .humble{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .com-icon{
+        display:inline !important;
+        color:#13524a !important;
+    }
+    .lists{
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+    }
+  }
+
